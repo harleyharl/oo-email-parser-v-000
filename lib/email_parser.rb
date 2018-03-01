@@ -28,6 +28,7 @@ class EmailParser
     clean_list = emails.split(/[\s,]/) - [""]
     clean_list.each do |address|
       if !clean_list.include?(address)
+        binding.pry
         clean_list << address
       else
         clean_list
