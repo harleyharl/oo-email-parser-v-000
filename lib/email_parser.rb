@@ -14,13 +14,18 @@ class EmailParser
     @emails = emails
   end
 
+  # def parse
+  #   if emails.include?(",") 
+  #     emails.strip.split(", ")
+  #   else
+  #     emails.strip.split(" ")
+  #   end
+  #   # binding.pry
+  # end
+
   def parse
-    if emails.include?(",")
-      emails.strip.split(", ")
-    else
-      emails.strip.split(" ")
-    end
-    # binding.pry
+    emails.strip.split(", ") && emails.strip.split(" ")
+
   end
 
 end
