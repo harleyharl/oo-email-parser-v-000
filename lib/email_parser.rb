@@ -26,11 +26,13 @@ class EmailParser
   def parse
     clean_list = []
     clean_list = emails.split(/[\s,]/) - [""]
-    clean_list.each do |address| 
+    clean_list.each do |address|
       if !clean_list.include?(address)
         clean_list << address
-      else 
+      else
         clean_list
+      end 
+    end
   end
 
 end
