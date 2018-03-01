@@ -18,6 +18,7 @@ class EmailParser
       emails.strip.split(",")
     else
       emails.strip.split(" ")
+      binding.pry
     end
   end
 
