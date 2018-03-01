@@ -15,10 +15,10 @@ class EmailParser
 
   def parse
     if emails.include?(",")
-      emails.split(",")
+      emails.split(",").chomp(" ")
     else
-      emails.split(" ").chomp(" ")
-    end 
+      emails.split(" ")
+    end
   end
 
 end
