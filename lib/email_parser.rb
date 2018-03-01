@@ -8,7 +8,7 @@ class EmailParser
 
   attr_accessor :emails
 
- #
+ # @@emails = []
 
   def initialize(emails)
     @emails = emails
@@ -24,9 +24,8 @@ class EmailParser
   # end
 
   def parse
-    emails = []
-    emails = emails.split(/[\s,]/)
-    emails.remove("")
+    new_list = emails.split(/[\s,]/)
+    new_list.remove("")
   end
 
 end
