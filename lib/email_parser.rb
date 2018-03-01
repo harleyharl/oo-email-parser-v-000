@@ -18,6 +18,7 @@ class EmailParser
       emails.split(",")
     else
       emails.split(" ")
+    end 
   end
 
 end
