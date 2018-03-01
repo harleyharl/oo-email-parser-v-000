@@ -17,7 +17,7 @@ class EmailParser
     if emails.include?(",")
       emails.split(",")
     else
-      emails.split(" ")
+      emails.split(" ").chomp(" ")
     end 
   end
 
