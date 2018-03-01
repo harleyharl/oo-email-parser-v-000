@@ -24,7 +24,7 @@ class EmailParser
   # end
 
   def parse
-    emails.strip.split(", ") && emails.strip.split(" ")
+    emails.strip.split(", ") || emails.strip.split(" ")
 
   end
 
