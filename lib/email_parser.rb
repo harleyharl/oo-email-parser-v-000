@@ -25,8 +25,8 @@ class EmailParser
 
   def parse
     new_list = []
-    new_list = emails.split(/[\s,]/)
-    new_list.remove("")
+    new_list = emails.split(/[\s,]/) - [""]
+    new_list
   end
 
 end
