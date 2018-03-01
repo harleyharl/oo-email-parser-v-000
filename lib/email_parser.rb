@@ -16,11 +16,11 @@ class EmailParser
 
   def parse
     if emails.include?(",")
-      emails.strip.split(",")
+      emails.strip.split(", ")
     else
       emails.strip.split(" ")
     end
-    binding.pry
+    # binding.pry
   end
 
 end
