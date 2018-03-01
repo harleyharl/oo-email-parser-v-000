@@ -18,8 +18,8 @@ class EmailParser
       emails.strip.split(",")
     else
       emails.strip.split(" ")
-      binding.pry
     end
+    binding.pry
   end
 
 end
