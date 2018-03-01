@@ -24,7 +24,8 @@ class EmailParser
   # end
 
   def parse
-    emails.split(/[\s,]/).delete("")
+    emails.split(/[\s,]/)
+    emails.remove("")
   end
 
 end
