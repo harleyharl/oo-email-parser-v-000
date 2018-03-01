@@ -17,7 +17,7 @@ class EmailParser
   def parse
     if emails.include?(",")
       emails.strip.split(", ")
-    else
+    elsif
       emails.strip.split(" ")
     end
     # binding.pry
