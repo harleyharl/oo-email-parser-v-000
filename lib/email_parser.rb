@@ -8,20 +8,9 @@ class EmailParser
 
   attr_accessor :emails
 
- # @@emails = []
-
   def initialize(emails)
     @emails = emails
   end
-
-  # def parse
-  #   if emails.include?(",")
-  #     emails.strip.split(", ")
-  #   else
-  #     emails.strip.split(" ")
-  #   end
-  #   # binding.pry
-  # end
 
   def parse
     clean_list = []
